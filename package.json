@@ -1,0 +1,19 @@
+{
+  "name": "cap-test-workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@capacitor/create-plugin": "^0.7.4"
+  },
+  "resolutions": {
+    "typescript": "4.2.4"
+  },
+  "devDependencies": {
+    "@yarnpkg/pnpify": "^3.0.0-rc.6"
+  }
+}

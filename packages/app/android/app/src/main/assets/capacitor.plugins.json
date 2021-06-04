@@ -1,0 +1,6 @@
+[
+	{
+		"pkg": "echo",
+		"classpath": "com.mycompany.plugins.example.EchoPlugin"
+	}
+]
