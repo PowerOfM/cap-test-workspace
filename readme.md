@@ -13,7 +13,7 @@ This monorepo has 2 packages
 3. Build app: `cd ../app && yarn build`
 4. Sync andriod or ios app: `yarn sync-android` or `yarn sync-ios`
 
-`sync-android` is expected to run without errors. To see the error, open Android Studio (`yarn cap open android`) and attemp to run the project. In the Build Output tab, you'll be met with the following:
+`sync-android` is expected to run without errors. To see the error, open Android Studio 4.2.1 (`yarn cap open android`) and attempt to run the project. In the Build Output tab, you'll be met with the following:
 ```
 Could not determine the dependencies of task ':app:compileDebugJavaWithJavac'.
 > Could not resolve all task dependencies for configuration ':app:debugCompileClasspath'.
@@ -24,4 +24,7 @@ Could not determine the dependencies of task ':app:compileDebugJavaWithJavac'.
           - None of the consumable configurations have attributes.
 ```
 
-`sync-ios` will crash with a pod error, indicating that the pod Echo could not be found in the $$virtual path.
+`sync-ios` will crash with a pod error, indicating that the pod Echo could not be found in the $virtual path:
+```
+[!] No podspec found for `Echo` in `../../../../.yarn/$virtual/echo-virtual-d76bc47c44/1/packages/echo`
+```
